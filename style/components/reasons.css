@@ -1,0 +1,84 @@
+
+.happy_main_block {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 80px;
+	margin-bottom: 50px;
+}	
+
+.happy_block {
+	width: 42%;
+	border: 1px solid #ddd;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 40px;
+}
+
+.happy_title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.happy_text {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 17px;
+	margin-bottom: 40px;
+	line-height: 1.5;
+}
+
+.italic {
+	margin-bottom: 0;
+	font-style: italic;
+	font-weight: 700;
+}
+
+.happy_button {
+	background-color: #fff;
+}
+
+@media (max-width: 425px) {
+
+	.happy_main_block {
+	    flex-direction: column;
+	}
+
+	.happy_block {
+    	width: 100%;
+	}
+
+	.title { 
+	    font-size: 35px;
+	    padding-top: 80px;
+	    padding-left: 42px;
+	}
+
+	.line {
+		margin: 30px 44px;
+	}
+
+	.button {
+		width: 170px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

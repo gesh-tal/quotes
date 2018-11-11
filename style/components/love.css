@@ -1,0 +1,76 @@
+
+.love {
+	position: relative;
+	width: 100%;
+	background-image: url('../../images/love bg.png');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;	
+}
+
+.love_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.love_title {
+	position: relative;
+	width: 65%;
+	margin: 0 auto;
+	padding-top: 150px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.love_subtitle {
+	position: relative;
+	font-size: 18px;
+	margin: 50px auto 0;
+	padding-bottom: 140px; 
+}
+
+.love a {
+	color: #fff;
+}
+
+@media (max-width: 1024px) {
+	.love_title {
+		font-size: 46px;
+	}
+}
+
+@media (max-width: 768px) {
+	.love_title {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 425px) {
+	.love_title {
+		font-size: 35px;
+		padding-top: 80px;
+	}
+
+	.love_subtitle {
+	    font-size: 14px;
+	    padding-bottom: 98px;
+	}
+}
+
+@media (max-width: 375px) {
+	.love_title {
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 325px) {
+	.love_title {
+		font-size: 27px;
+	}
+}
+

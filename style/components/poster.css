@@ -1,0 +1,390 @@
+
+.poster {
+	width: 100%;
+	background-color: #f2f4f5;
+}
+
+.line {
+	width: 75px;
+	height: 3px;
+	background-color: #000;
+	margin: 30px 103px;
+}
+
+.poster_block {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.poster_left {
+	position: relative;
+	width: 34%;
+	height: 600px;
+	background-image: url('../../images/true.png');
+	background-size: 197%;
+	background-position: 25%;
+	margin: 50px 70px 70px 100px;
+	filter: drop-shadow(8px 8px 10px #000);
+}
+
+.poster_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: none;
+}
+
+.overlay_text {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	margin: 0 270px 30px 30px;
+}
+
+.poster_left_text {
+	color: #fff;
+	font-family: "Adobe Fan Heiti STD";
+	font-weight: bold;
+	font-size: 58px;
+	text-align: center;
+	line-height: 1.5;
+	margin-top: 110px;
+}
+
+.poster_left:hover .poster_overlay {
+	display: flex;
+}
+
+.poster_right {
+	width: 53%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.poster_top {
+	position: relative;
+	width: 85%;
+	height: 290px;
+	background-image: url('../../images/muse.png');
+	background-size: cover;
+	margin-top: 50px;
+	filter: drop-shadow(8px 8px 10px #000);
+}
+
+.poster_top_text {
+	position: relative;
+	font-family: "Monotype Coursiva";
+	font-weight: bold;
+	font-style: italic;
+	font-size: 30px;
+	margin: 60px 60px 20px 60px;
+}
+
+.poster_top_text2 {
+	position: relative;
+	margin-left: 60px;
+}
+
+.poster2_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url('../../images/muse.png');
+	background-size: cover;
+	filter: hue-rotate(180deg);
+}
+
+.poster_top:hover .poster2_overlay {
+	display: flex;
+}
+
+.poster_bottom {
+	position: relative;
+	width: 40%;
+	height: 266px;
+	background-image: url('../../images/work.png');
+	background-size: cover;
+	background-position: 0 -20px;
+	margin-top: -30px;
+	margin-right: 35px;
+	filter: drop-shadow(8px 8px 10px #000);
+}
+
+.poster3_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url('../../images/work.png');
+	background-size: cover;
+	background-position: 0 -20px;
+	filter: blur(4px);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.poster_bottom_text {
+	font-family: "Bauhaus 93";
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin: 25px auto;
+}
+
+.poster_bottom:hover .poster3_overlay {
+	display: flex;
+}
+
+.bottom_two {
+	background-image: url('../../images/silence.png');
+	filter: drop-shadow(8px 8px 10px #000);
+}
+
+.poster4_overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-image: url('../../images/silence.png');
+	background-size: cover;
+	background-position: 0 -20px;
+	filter: grayscale(100%);
+}
+
+.bottom_two_text {
+	position: relative;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	margin-top: 120px;
+	line-height: 1.2;
+}
+
+span {
+	position: relative;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.bottom_two:hover .poster4_overlay {
+	display: flex;
+}
+
+.poster_button {
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+	width: 230px;
+	text-decoration: none;
+	text-align: center; 
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: 12px;
+	color: #000;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-bottom: 80px;
+	background-color: #f2f4f5;
+	outline: none;
+}
+
+@media (max-width: 1024px) {
+	.poster_block {
+		flex-wrap: nowrap;
+	}
+
+	.poster_left {
+		background-size: 239%;
+		margin-right: 68px;
+	}
+
+	.poster_left_text {
+		font-size: 46px;
+		margin-top: 144px;
+	}
+
+	.poster_overlay {
+		background-size: 239%;
+	}
+
+	.poster_top {
+		width: 90%;
+		background-size: 125%;
+		background-position: -10px;
+	}
+
+	.poster2_overlay {
+		background-size: 125%;
+		background-position: -10px;
+	}
+
+	.poster_bottom {
+		width: 42%;
+		background-size: 120%;
+    	background-position: -19px 0px;
+	}
+
+	.poster3_overlay, .poster4_overlay {
+		background-size: 120%;
+    	background-position: -19px 0px;
+	}
+
+	.overlay_text {
+		margin: 0 160px 30px 30px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.title {
+	    font-size: 43px;
+	    padding-left: 69px;
+	}
+
+	.line {
+		margin: 30px 73px;
+	}
+
+	.poster_left {
+		width: 32%;
+		height: 432px;
+		margin: 50px 56px 70px 73px;
+	}
+
+	.poster_left_text {
+		font-size: 30px;
+	}
+
+	.poster_top {
+    	height: 214px;
+	}
+
+	.poster_top_text {
+		font-size: 21px;
+	}
+
+	.poster_bottom {
+		width: 40%;
+    	height: 178px;
+	}
+
+	.poster_bottom_text {
+	    font-size: 21px;
+	 }
+
+	.bottom_two_text {
+	 	font-size: 17px;
+	 }
+
+	span {
+	 	font-size: 23px;
+	 }
+	 
+	.overlay_text {
+		margin: 0 68px 30px 30px;
+	}   
+}
+
+@media (max-width: 425px) {
+
+	.poster_block, .poster_right {
+		flex-direction: column;
+	}
+
+	.poster_left, .poster_right  {
+		width: 80%;
+		margin: 10px auto;
+	}
+
+	.title {
+		font-size: 40px;
+		padding-left: 41px;
+	}
+
+	.line {
+		margin: 30px 44px;
+	}
+
+	.poster_left_text {
+	    font-size: 41px;
+	    margin-top: 108px;
+	}
+
+	.overlay_text {
+	    margin: 0 99px 30px 52px;
+	}
+
+	.poster_top {
+		width: 100%;
+		height: 160px;
+		margin: 50px auto;
+	}
+
+	.poster_top_text {
+	    font-size: 20px;
+	    margin: 36px 0px 20px 24px;
+	}
+
+	.poster_top_text2 {
+	    margin-left: 24px;
+	}
+
+	.poster_bottom {
+		width: 100%;
+		height: 300px;
+		background-size: 106%;
+		background-position: -19px -39px;
+		margin: 25px auto;
+	}
+
+	.poster3_overlay, .poster4_overlay {
+		background-size: 106%;
+		background-position: -19px -39px;		
+	}
+
+	.bottom_two_text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 375px) {
+
+	.title {
+		font-size: 35px;
+		padding-left: 41px;
+	}
+
+	.poster_bottom {
+		height: 285px;
+	}
+
+	.overlay_text {
+	    margin: 0 67px 30px 52px;
+	}
+}
+
+@media (max-width: 320px) {
+
+	.poster_left_text {
+	    font-size: 31px;
+	}
+
+	.poster_bottom {
+		width: 100%;
+		height: 240px;
+	}
+
+	.overlay_text {
+	    margin: 0 30px 30px 52px;
+	}
+}
+
+

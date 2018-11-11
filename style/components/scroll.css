@@ -1,0 +1,15 @@
+.scroll {
+	width: 40px;
+	position: fixed;
+	bottom: 30px;
+	right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+.scroll img {
+	width: 100%;
+}
+
+
+

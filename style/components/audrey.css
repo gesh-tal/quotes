@@ -1,0 +1,93 @@
+
+.audrey {
+	width: 100%;
+	background-image: url('../../images/audrey bg.png');
+	display: flex;
+}
+
+.audrey_left {
+	width: 50%;
+}
+
+.audrey_text {
+	width: 80%;
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	line-height: 1.3;
+	padding-top: 120px;
+	padding-left: 100px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.thin {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.audrey_right {
+	width: 50%;
+	height: 550px;
+	background-image: url('../../images/audrey img.png');
+	background-size: 120%;
+	background-position: bottom;
+}
+
+@media (max-width: 1024px) {
+	.audrey_text {
+		width: 90%;
+		padding-top: 72px;
+		padding-left: 82px;
+	}
+
+	.audrey_right {    
+	    height: 526px;   
+	    background-size: 147%;
+    }
+}
+
+@media (max-width: 768px) {
+
+	.audrey_text {
+		width: 89%;
+		font-size: 22px;
+   		padding-left: 57px;
+	}
+
+	.audrey_right {
+		width: 50%;
+		height: 438px;
+		background-size: 157%;
+	}
+}
+
+@media (max-width: 425px) {
+
+	.audrey {
+		flex-direction: column;
+	}
+    
+	.audrey_left {
+	    width: 100%;
+	}
+	
+	.audrey_right {
+	    width: 100%;
+	    height: 350px;
+	}
+
+	.audrey_text {
+	    padding-top: 49px;
+	}
+}
+
+@media (max-width: 375px) {
+	.audrey_right {
+	    width: 100%;
+	    height: 300px;
+	}
+}
+
+
